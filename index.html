@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .contenedor-flexible {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: gray;
+            height: 100%;
+            width: 50%; 
+            align-content: flex-start;
+        }
+        .contenedor-flexible2 {
+            display: flex;
+            flex-direction: row; 
+            justify-content: baseline;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            background-color: green;
+            height: 100%;
+            width: 50%; 
+            align-content: flex-start;
+        }
+
+        .elemento-flexible {
+            font-size: 5rem;
+            color: white;
+        }
+
+        .uno {
+            background-color: mediumaquamarine;
+            flex-basis: 100%;
+            flex-grow: 0;
+            height: 100%; 
+        }
+
+        .dos {
+            background-color: aqua;
+            flex-basis: 100%;
+            flex-grow: 0;
+            height: 50%; 
+        }
+
+        .tres {
+            background-color: lightgreen;
+            flex-basis: 100%;
+            flex-grow: 0;
+            height: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">1</div>
+    </div>
+    <div class="contenedor-flexible2">
+        <div class="elemento-flexible dos">2</div>
+        <div class="elemento-flexible tres">3</div>
+    </div>
+</body>
+</html>
